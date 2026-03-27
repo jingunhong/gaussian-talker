@@ -213,7 +213,23 @@ __marimo__/
 
 # Project data and experiment artifacts
 artifacts/
-checkpoints/
-data/
-outputs/
-renders/
+
+data/**
+!data/raw/
+!data/raw/README.md
+!data/raw/obama/
+!data/raw/obama/README.md
+!data/processed/
+!data/processed/README.md
+
+checkpoints/**
+!checkpoints/
+!checkpoints/README.md
+
+outputs/**
+!outputs/
+!outputs/README.md
+
+renders/**
+!renders/
+!renders/README.md

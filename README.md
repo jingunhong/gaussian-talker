@@ -100,6 +100,22 @@ This repo will likely grow toward:
 - experiments for audio-to-motion prediction
 - experiments for stable 3DGS avatar control
 
+## Data Setup
+
+The baseline subject clip for the current specs is Obama. Download it to `data/raw/obama/obama.mp4`:
+
+```bash
+wget https://github.com/YudongGuo/AD-NeRF/blob/master/dataset/vids/Obama.mp4?raw=true -O data/raw/obama/obama.mp4
+```
+
+Repo data layout:
+
+- `data/raw/` for immutable source assets such as downloaded videos
+- `data/processed/` for derived frames, audio, tracking, masks, motion targets, and manifests
+- `checkpoints/`, `outputs/`, and `renders/` for run artifacts
+
+These directories are kept in the repo with placeholder files, but generated artifacts inside them are ignored by git.
+
 ## Status
 
 Early scaffold. The main purpose right now is to define a clear implementation target before adding code.
